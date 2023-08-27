@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class card_small extends StatelessWidget {
+class CardSmall extends StatelessWidget {
   final String imageUrl;
   final String text;
 
-  const card_small({Key? key, required this.imageUrl, required this.text}) : super(key: key);
+  const CardSmall({Key? key, required this.imageUrl, required this.text}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

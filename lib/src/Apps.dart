@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/src/screens/Order.dart';
+import 'package:flutter_application_1/src/screens/Orders.dart';
 
-import 'screens/MyPage.dart';
-import 'screens/Bookmark.dart';
-import 'screens/Home.dart';
-import 'screens/Notification.dart';
+import 'screens/my_page.dart';
+import 'screens/Bookmarks.dart';
+import 'screens/Homes.dart';
+import 'screens/Notifications.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

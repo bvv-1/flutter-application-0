@@ -44,10 +44,10 @@ class HomeScreen extends StatelessWidget {
         ),
         const Row(
           children: [
-            card_small(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
-            card_small(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
-            card_small(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
-            card_small(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
+            CardSmall(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
+            CardSmall(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
+            CardSmall(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
+            CardSmall(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
           ]
         ),
         const Align(
