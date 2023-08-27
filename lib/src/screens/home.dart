@@ -43,6 +43,7 @@ class HomeScreen extends StatelessWidget {
           child: Text("ジャンルから選ぶ", style: TextStyle(fontSize: 20), textAlign: TextAlign.left),
         ),
         const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CardSmall(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
             CardSmall(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
