@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/src/screens/order.dart';
 
-import 'screens/mypage.dart';
+import 'screens/my_page.dart';
 import 'screens/bookmark.dart';
 import 'screens/home.dart';
 import 'screens/notification.dart';
