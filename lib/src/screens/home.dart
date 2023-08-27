@@ -6,10 +6,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Search Bar Sample')),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: SearchAnchor(
+      appBar: AppBar(title: const Text('ホーム')),
+      body: Column(children: [
+        SearchAnchor(
             builder: (BuildContext context, SearchController controller) {
           return SearchBar(
             controller: controller,
@@ -37,7 +36,15 @@ class HomeScreen extends StatelessWidget {
             );
           });
         }),
-      ),
+        const Align(
+          alignment: Alignment.centerLeft,
+          child: Text("ジャンルから選ぶ", style: TextStyle(fontSize: 20), textAlign: TextAlign.left),
+        ),
+        const Align(
+          alignment: Alignment.centerLeft,
+          child: Text("注目の飲食店", style: TextStyle(fontSize: 20), textAlign: TextAlign.left),
+        ),
+      ]),
     );
   }
 }
