@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../components/card_small.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -39,6 +41,14 @@ class HomeScreen extends StatelessWidget {
         const Align(
           alignment: Alignment.centerLeft,
           child: Text("ジャンルから選ぶ", style: TextStyle(fontSize: 20), textAlign: TextAlign.left),
+        ),
+        const Row(
+          children: [
+            card_small(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
+            card_small(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
+            card_small(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
+            card_small(imageUrl: "https://via.placeholder.com/300/09f/fff.png", text: "中華料理"),
+          ]
         ),
         const Align(
           alignment: Alignment.centerLeft,

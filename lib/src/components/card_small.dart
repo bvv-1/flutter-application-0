@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class CardSmall extends StatelessWidget {
+class card_small extends StatelessWidget {
   final String imageUrl;
   final String text;
 
-  const CardSmall({Key? key, required this.imageUrl, required this.text}) : super(key: key);
+  const card_small({Key? key, required this.imageUrl, required this.text}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,8 +13,8 @@ class CardSmall extends StatelessWidget {
         ClipOval(
           child: Image.network(
             imageUrl,
-            width: 100, // 画像の幅
-            height: 100, // 画像の高さ
+            width: 70, // 画像の幅
+            height: 70, // 画像の高さ
             fit: BoxFit.cover,
           ),
         ),
