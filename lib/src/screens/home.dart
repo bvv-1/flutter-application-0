@@ -42,6 +42,7 @@ class HomeScreen extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text("ジャンルから選ぶ", style: TextStyle(fontSize: 20), textAlign: TextAlign.left),
         ),
+        const Divider(),
         const Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -55,6 +56,7 @@ class HomeScreen extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text("注目の飲食店", style: TextStyle(fontSize: 20), textAlign: TextAlign.left),
         ),
+        const Divider(),
       ]),
     );
   }
