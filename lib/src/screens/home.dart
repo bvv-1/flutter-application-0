@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../components/card_small.dart';
+import '../components/card_large.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -10,8 +11,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('ホーム')),
       body: Column(children: [
-        SearchAnchor(
-            builder: (BuildContext context, SearchController controller) {
+        SearchAnchor(builder: (
+          BuildContext context,
+          SearchController controller,
+        ) {
           return SearchBar(
             controller: controller,
             padding: const MaterialStatePropertyAll<EdgeInsets>(
@@ -24,8 +27,10 @@ class HomeScreen extends StatelessWidget {
             },
             leading: const Icon(Icons.search),
           );
-        }, suggestionsBuilder:
-                (BuildContext context, SearchController controller) {
+        }, suggestionsBuilder: (
+          BuildContext context,
+          SearchController controller,
+        ) {
           return List<ListTile>.generate(5, (int index) {
             final String item = 'item $index';
             return ListTile(
@@ -61,13 +66,33 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
         ),
-
-        const Align(
-          alignment: Alignment.centerLeft,
-          child: Text("注目の飲食店",
-              style: TextStyle(fontSize: 20), textAlign: TextAlign.left),
-        ),
-        const Divider(),
+        Column(
+          children: [
+            const Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                "注目の飲食店",
+                style: TextStyle(fontSize: 20),
+                textAlign: TextAlign.left,
+              ),
+            ),
+            const Divider(),
+            GridView.builder(
+              shrinkWrap: true,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 4, // 1行に表示するアイテムの数
+                mainAxisExtent: 120,
+              ),
+              itemCount: 4,
+              itemBuilder: (context, index) {
+                return const CardLarge(
+                  imageUrl: "https://via.placeholder.com/300/09f/fff.png",
+                  text: "中華料理",
+                );
+              },
+            ),
+          ],
+        )
       ]),
     );
   }

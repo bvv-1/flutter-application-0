@@ -10,7 +10,8 @@ class BookmarkScreen extends StatelessWidget {
         title: const Text('お気に入り'),
       ),
       body: const Center(
-          child: Text('お気に入り画面', style: TextStyle(fontSize: 32.0))),
+        child: Text('お気に入り画面', style: TextStyle(fontSize: 32.0)),
+      ),
     );
   }
 }
