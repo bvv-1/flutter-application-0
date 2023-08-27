@@ -10,11 +10,14 @@ class CardLarge extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ClipOval(
+        ClipRRect(
+          borderRadius: const BorderRadius.all(
+            Radius.circular(10),
+          ),
           child: Image.network(
             imageUrl,
-            width: 70, // 画像の幅
-            height: 70, // 画像の高さ
+            width: 150, // 画像の幅
+            height: 120, // 画像の高さ
             fit: BoxFit.cover,
           ),
         ),

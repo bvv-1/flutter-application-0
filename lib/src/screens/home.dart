@@ -80,14 +80,14 @@ class HomeScreen extends StatelessWidget {
             GridView.builder(
               shrinkWrap: true,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 4, // 1行に表示するアイテムの数
-                mainAxisExtent: 120,
+                crossAxisCount: 2, // 1行に表示するアイテムの数
+                mainAxisExtent: 180,
               ),
               itemCount: 4,
               itemBuilder: (context, index) {
                 return const CardLarge(
                   imageUrl: "https://via.placeholder.com/300/09f/fff.png",
-                  text: "中華料理",
+                  text: "有名町中華",
                 );
               },
             ),
